@@ -1,0 +1,52 @@
+Python
+
+Should be in version 3.10.8 (in case you are using Vs code: install pylance in Vs code)
+
+
+Installation: (in the terminal)
+
+pip install mysql-connector-python speechrecognition pyaudio fpdf pymupdf google-generativeai requests
+
+
+In code: (line no: 21)
+
+try:
+    db = mysql.connector.connect(
+        host="localhost",
+        user="root",  # Change this to your MySQL username
+        password="********",  # Change this to your MySQL password
+        database="expense_tracker"
+    )
+    cursor = db.cursor()
+
+
+Instead of ***, use your Sql password (you need to install MySQL and set the password)
+
+
+
+For Running: (in the terminal)
+
+type: python expensetracker.py  (then give enter)
+
+
+For PDF: Set the path where to generate ie., to download  (Optional - but be clear with where it is downloading) 
+
+Sql:
+
+Run: SELECT * FROM expenses; # It will show the data's stored in database
+
+General Instructions:
+
+For Voice Input: Use Wired Headphones or Bluetooth Airpods and Speak Loudly using the Headphones or Airpods. 
+
+After Generating the pdf, press AI insights because the data's are taken from the pdf only.
+
+
+
+
+
+
+
+
+
+
